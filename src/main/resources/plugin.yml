@@ -1,0 +1,26 @@
+name: LobbyPlugin
+main: com.dev_rohit.lobby.LobbyPlugin
+version: 1.0
+api-version: "1.21"
+commands:
+  lobby:
+    description: Teleport to lobby
+    usage: /<command>
+  hub:
+    description: Teleport to hub
+    usage: /<command>
+  spawn:
+    description: Teleport to spawn
+    usage: /<command>
+  npc:
+    description: NPC admin commands (wrapping Citizens)
+    usage: /npc <...>
+permissions:
+  lobby.use:
+    default: true
+  hub.use:
+    default: true
+  spawn.use:
+    default: true
+  lobby.admin:
+    default: op
